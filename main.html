@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>Présentation Cgss</title>
+  </head>
+  <body>
+    <nav class="navbar">
+      <a
+        href="https://fr.wikipedia.org/wiki/Caisse_générale_de_sécurité_sociale"
+        target="_blank"
+        class="logo"
+        >Caisse Générale de Sécurité Sociale</a
+      >
+      <div class="nav-links">
+        <ul>
+          <li class="active"><a href="main.html">Accueil</a></li>
+          <li><a href="form1.html">1er Formulaire (PHP)</a></li>
+          <li><a href="form2.html">2ème Formulaire (Javascript)</a></li>
+          <li><a href="#contact" class="action_btn">Me contacter</a></li>
+        </ul>
+      </div>
+      <img src="Hamburger_icon.svg.png" alt="menu_déroulant" class="menu" />
+    </nav>
+    <header></header>
+
+    <div class="contact-container" id="contact">
+      <form
+        action="https://api.web3forms.com/submit"
+        method="POST"
+        class="contact-left"
+      >
+        <div class="contact-left-title">
+          <h3>Contactez-moi</h3>
+          <hr />
+        </div>
+        <input
+          type="hidden"
+          name="access_key"
+          value="51ed1c17-b4b3-4902-aa88-1e43f8ea2d31"
+        />
+        <input
+          type="text"
+          name="name"
+          placeholder="Votre nom"
+          class="contact-inputs"
+          required
+        />
+        <input
+          type="email"
+          name="email"
+          placeholder="Votre Email"
+          class="contact-inputs"
+          required
+        />
+        <textarea
+          name="message"
+          placeholder="Votre message"
+          class="contact-inputs"
+          required
+        ></textarea>
+        <button type="submit">Envoyer</button>
+      </form>
+    </div>
+  </body>
+  <script>
+    const menu = document.querySelector(".menu");
+    const navLinks = document.querySelector(".nav-links");
+
+    menu.addEventListener("click", () => {
+      navLinks.classList.toggle("mobile-menu");
+    });
+  </script>
+</html>
