@@ -1,27 +1,52 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
   <head>
-    <title>Basic JavaScript Form</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="fontawesome-free-6.5.1-web/fontawesome-free-6.5.1-web/css/all.min.css" />
+    <link rel="stylesheet" type="text/css" href="styleform.css" />
+    <script src="index.js" async></script>
+    <title>Formulaire Javascript</title>
   </head>
   <body>
-    <form>
-      <label for="num1">Number 1:</label>
-      <input type="number" id="num1" name="num1" required />
-
-      <label for="num2">Number 2:</label>
-      <input type="number" id="num2" name="num2" required />
-
-      <label for="operator">Operator:</label>
-      <select id="operator" name="operator" required>
-        <option value="+">+</option>
-        <option value="-">-</option>
-        <option value="*">*</option>
-        <option value="/">/</option>
-      </select>
-
-      <button type="submit" onclick="calculate()">Calculer</button>
-    </form>
-
-    <a href="main.html">Retour</a>
+    <div class="container">
+        <div class="header">
+            <h2>Formulaire basique</h2>
+        </div>
+        <p1>Savez-vous respecter certaines règles de sécurité ? </p1>
+            <form action="" class="form" id="form">
+                <div class="form-control">
+                    <label for="">Nom d'utilisateur</label>
+                    <input type="text" id="username" placeholder="Toto">
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-exclamation"></i>
+                    <small>Message d'erreur</small>
+                </div>
+                <div class="form-control">
+                    <label for="">Email</label>
+                    <input type="email" id="email" placeholder="toto@abruti.fr">
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-exclamation"></i>
+                    <small>Message d'erreur</small>
+                </div>
+                <div class="form-control">
+                    <label for="">Mot de passe</label>
+                    <input type="text" id="password" placeholder="*****">
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-exclamation"></i>
+                    <small>Message d'erreur</small>
+                </div>
+                <div class="form-control">
+                    <label for="">Confirmation du mot de passe</label>
+                    <input type="text" id="password2" placeholder="la même chose chef">
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-exclamation"></i>
+                    <small>Message d'erreur</small>
+                </div>
+                <button type="submit"><i class="fas fa-user-plus"></i>S'inscrire</button>
+            </form>
+            
+    </div>
   </body>
 </html>

@@ -14,20 +14,29 @@ body {
   background-position: center;
   position: relative;
   height: 100vh;
-  width: 100vw;
+  width: 95vw;
 }
 .texte{
   font-size: 1em;
   padding: 200px;
   padding-left:50px;
-  font-weight: bold
+  font-weight:bold;
+  
 }
 a {
   text-decoration: none;
   color: #000;
-  font-size: 1rem;
+  font-size: 0.9rem;
 }
-
+p1{
+  color:red;
+}
+p2{
+  padding-left:10px;
+}
+p3{
+  padding-left:20px;
+}
 a:hover {
   color: rgb(49, 7, 219);
 }
@@ -123,6 +132,10 @@ a:hover {
     margin: 25px 0;
     font-size: 1.2em;
   }
+  .texte{
+    width:80%;
+    font-weight: 600;
+  }
 }
 
 /* Partie mails*/
@@ -203,12 +216,30 @@ a:hover {
     font-size: 1.5rem;
   }
   .contact-left-title hr {
-    width: 50%;
+    width: 100%;
   }
   .contact-inputs {
     width: 100%;
   }
   .contact-left button {
     width: 100%;
+  }
+  .contact-inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 250px;
+    height: 50px;
+    border: none;
+    outline: none;
+    padding-left: 25px;
+    font-weight: 500;
+    border-radius: 50px;
+    align-items: center;
+  }
+  .contact-left textarea {
+    height: 140px;
+    padding-top: 15px;
+    border-radius: 20px;
   }
 }

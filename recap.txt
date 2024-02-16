@@ -1,0 +1,8 @@
+Utilisation Nexthink + Finder 
+Relevé des postes avec agent wapt défectueux 
+création de comptes hid vpn 
+commencement du programme mco (mise en conformité opérationnelle)
+--> Relevé des différentes versions des programmes du parc + vision des différentes requêtes du national
+élaboration des tableaux de bord grafana pour une facilité d'accès aux informations (visuel)
+formation nexthink 
+mise à jour des paquets zoom, zoom outlook plugin, webview 2 et edge.
