@@ -80,53 +80,16 @@ function setSuccess(elem) {
 }
 function email_verify(email) {
   // Vérification de l'email.
-  const re = /^[a-z0-9._-]+@[a-z0-0._-]{2,}\.[a-z]]{2,4}$/;
+  const re = /^[a-zA-Z0-9. _-]+@[a-zA-Z0-9. -]+.[a-zA-Z]{2,4}$/;
+  // const re = /^[a-z0-9._-]+@[a-z0-0._-]{2,}\.[a-z]]{2,4}$/;
   return re.test(email);
 }
 function password_verify(password) {
   // Vérification du mot de passe.
-  const re = /^(?=.*[0-9])(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{8,12}$/;
-  return re.test(password);
-}
-
-function getTrueValues() {
-  const trueValues = [];
-
-  // Check username
-  if (usernameValue === "") {
-    trueValues.push(false);
-  } else if (usernameValue.length < 3) {
-    trueValues.push(false);
-  } else {
-    trueValues.push(true);
-  }
-
-  // Check email
-  if (emailValue === "") {
-    trueValues.push(false);
-  } else if (!email_verify(emailValue)) {
-    trueValues.push(false);
-  } else {
-    trueValues.push(true);
-  }
-
-  // Check password
-  if (passwordValue === "") {
-    trueValues.push(false);
-  } else if (!password_verify(passwordValue)) {
-    trueValues.push(false);
-  } else {
-    trueValues.push(true);
-  }
-
-  // Check password2
-  if (password2Value === "") {
-    trueValues.push(false);
-  } else if (passwordValue !== password2Value) {
-    trueValues.push(false);
-  } else {
-    trueValues.push(true);
-  }
-
-  return trueValues;
+  console.log(password);
+  const re = /^(?=.*[a-z])(?=.*\d)(?=.*[@.#$!%*?&^])[A-Za-z\d@.#$!%*?&]{8,15}$/;
+  // const re = /^(?=.*[0-9])(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{8,12}$/;
+  const result = re.test(password);
+  console.log(result);
+  return result;
 }
