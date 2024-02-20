@@ -6,3 +6,4 @@ commencement du programme mco (mise en conformité opérationnelle)
 élaboration des tableaux de bord grafana pour une facilité d'accès aux informations (visuel)
 formation nexthink 
 mise à jour des paquets zoom, zoom outlook plugin, webview 2 et edge.
+Création d'un serveur via VMWare et vCenter  
